@@ -45,8 +45,8 @@ INFINITE_PARAMETER_VALUE:
 
 INVALID_PARAMETERS:
   code: 8
-  en_US: parameters is invalid
-  zh_CN: 无效参数
+  en_US: parameters is invalid - '%s'
+  zh_CN: 无效参数 - '%s'
  
 
 INVALID_AUTH_TOKEN:

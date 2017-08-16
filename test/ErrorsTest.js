@@ -1,5 +1,5 @@
-const SRC = '../src';
-const Errors = require(`${SRC}/Errors`);
+const lib = require('../src/index');
+const Errors = lib.Errors;
 
 const mockRequire = require('mock-require');
 
@@ -143,6 +143,13 @@ describe("Errors test suite: ", function() {
         } catch (e) {
             expect(e).toBeDefined();
         }
+    });
+
+    it("just for coverage", function() {
+        expect(new lib.InternalError().type).toEqual(Errors.INTERNAL_ERROR);
+        expect(new lib.MissingParamError().type).toEqual(Errors.MISSING_PARAMETER);
+        expect(new lib.InternalError().type).toEqual(Errors.INTERNAL_ERROR);
+        expect(new lib.RequestError('NO_PERMISSION').type).toEqual(Errors.NO_PERMISSION);
     });
 
 });
