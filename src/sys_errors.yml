@@ -210,4 +210,12 @@ FAILED_TO_GENERATE_RESPONSE_WITH_TEMPLATE:
   en_US: failed to generate response with template. reason - %s
   zh_CN: 使用模板生成response内容时失败。原因 - %s
 
+SERVER_NOT_FOUND:
+  code: 36
+  en_US: cannot find server - %s
+  zh_CN: 未找到服务器 - %s
 
+VHOST_NOT_FOUND:
+  code: 37
+  en_US: cannot find virtual host - %s
+  zh_CN: 未找到虚拟主机 - %s
