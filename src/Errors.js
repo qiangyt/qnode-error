@@ -24,7 +24,7 @@ function register(codeStart, codeEnd, file) {
         }
     }
 
-    let entries = QNodeConfig.load(file);
+    let entries = QNodeConfig.load(file, null, false, false);
 
     for (let key in entries) {
         if (module.exports[key]) throw new Error('duplicated error key: ' + key);
