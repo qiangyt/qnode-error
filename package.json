@@ -1,6 +1,6 @@
 {
     "name": "qnode-error",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Node.js error code library, by Qiang Yiting.",
     "main": "src/index.js",
     "scripts": {
